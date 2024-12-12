@@ -76,3 +76,5 @@ todo = "warn"
 unreadable_literal = "warn"
 unseparated_literal_suffix = "warn"
 wildcard_imports = "warn"
+
+[workspace]
