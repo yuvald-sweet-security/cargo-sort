@@ -1,3 +1,62 @@
+# 2.1.4
+
+Bug Fixes
+
+* Fix a regression from 2.1.1 where comments after array values would be removed ([#134])
+
+[#134]: https://github.com/DevinR528/cargo-sort/pull/134
+
+# 2.1.3
+
+Bug Fixes
+
+* Fix a regression for checking files with CRLF file endings ([#131])
+
+[#131]: https://github.com/DevinR528/cargo-sort/pull/131
+
+# 2.1.2
+
+Bug Fixes
+
+* Don't error out on formatting-only diff unless `--check-format` is passed ([#129])
+
+[#129]: https://github.com/DevinR528/cargo-sort/pull/129
+
+# 2.1.1
+
+Bug Fixes
+
+* Formatting of arrays in inline tables is more conservative now
+  * In particular, such arrays are no longer converted to a single line,
+  * and comments inside of them are now preserved
+
+# 2.1.0
+
+Bug Fixes
+
+* Fix workspace discovery & sorting when directory name has an extension ([#121])
+* Apply formatting to arrays inside inline tables as well ([#122])
+
+Additions
+
+* Add support for sorting feature lists (behind the new config option `sort_feature_list`) ([#122])
+* `--config` flag for specifying a custom config file ([#124])
+
+Other Improvements
+
+* Upgrade the toml crate to 0.25, bringing support for TOML 1.1 ([#126])
+
+[#121]: https://github.com/DevinR528/cargo-sort/pull/121
+[#122]: https://github.com/DevinR528/cargo-sort/pull/122
+[#124]: https://github.com/DevinR528/cargo-sort/pull/124
+[#126]: https://github.com/DevinR528/cargo-sort/pull/126
+
+# 2.0.2
+
+Bug fixes
+
+* Set the Ubuntu release builder to ubuntu-22.04 to ensure that pre-built cargo-sort binaries can run on ubuntu-22.04 GitHub Actions runners and not get an error message about `GLIBC_2.38` not found.
+
 # 2.0.1
 
 Bug fixes
